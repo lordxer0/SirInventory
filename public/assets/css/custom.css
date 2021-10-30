@@ -1,0 +1,7 @@
+.fondo-negro{
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+}
+.fondo-negro > .card-header{
+    background: #383737;
+}

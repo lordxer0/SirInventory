@@ -18,6 +18,8 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
+
 </head>
 <body style="background-image: url('{{asset('assets/images/background/login_background.jpg')}}') ">
 
