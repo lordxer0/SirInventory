@@ -11,6 +11,16 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+use Illuminate\Routing\Console\MiddlewareMakeCommand;
+
+Auth::routes(['register' => false]);
+
+Route::group(['middleware' => ['auth']],function(){
+
+    Route::get('/', function () {
+        return view('welcome');
+    });
+
+    Route::get('/home', 'HomeController@index')->name('home');
+
 });
